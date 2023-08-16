@@ -1,7 +1,10 @@
 *{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    box-sizing: border-box;
+    
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -10,6 +13,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header a {
@@ -33,3 +40,16 @@ header a:hover {
     transition: transform .3s;
 }
 
+section {
+
+    border: 1px solid blue;
+    height: calc(100vh - 7rem);
+}
+
+main{
+  margin-top: 7rem;
+}
+
+section h2{
+    text-align: center;
+}
